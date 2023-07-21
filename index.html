@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonvoyage</title>
+    <style>
+        
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(235, 234, 234);
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: rgb(62, 172, 62);
+    margin-bottom: 70px;
+}
+.nav-bar {
+    align-items: flex-end;
+    margin: 38px;
+}
+h1 {
+    margin-left: 20px;
+    padding-top: 6px;
+    color: white;
+    text-shadow: 0.1em 0.1em black;
+}
+a {
+    margin-right: 20px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0.1em 0.1em black;
+    text-decoration: none;
+}
+.cidades {
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+}
+.tubarao,
+.criciuma,
+.ararangua {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    font-weight: 700;
+    box-shadow: 1px 2px 20px red;
+}
+.visualizar {
+    background-color: rgb(62, 172, 62);
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    border-color: rgb(62, 172, 62);
+    margin-left: 106px;
+}
+.nome-cidade {
+    font-style: italic;
+}
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 6px;
+}
+.procurar {
+    background-color: rgb(62, 172, 62);
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    border-color: rgb(62, 172, 62);
+}
+.visualizar:hover,
+.procurar:hover {
+    background-color: rgb(44, 117, 44);
+}
+footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    background-color: rgb(62, 172, 62);
+    margin-top: 130px;
+    margin-bottom: 20px;
+    padding: 8px;
+    color: white;
+}
+h2 {
+    color: white;
+    text-shadow: 0.1em 0.1em black;
+}
+</style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Bonvoyage</h1>
+        <nav class="nav-bar">
+        <a href="">Destinos</a>
+        <a href="">Pacotes</a>
+        <a href="">Sobre nós</a>
+        <a href="">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="cidades">
+            <div class="tubarao">
+                <img src="https://turismo.tubarao.sc.gov.br/wp-content/uploads/2022/07/tubbb-1-scaled.jpg" width="300px">
+                <p class="nome-cidade">Tubarão</p>
+                <p>Passagens a partir de</p>
+                <p>BTC 0,145242</p>
+                <button class="visualizar">Visualizar</button>
+            </div>
+            <div class="criciuma">
+                <img src="https://www.guiadoturismobrasil.com/up/img/1445165608.jpg" width="300px">
+                <p class="nome-cidade">Criciúma</p>
+                <p>Passagens a partir de</p>
+                <p>BTC 0,145242</p>
+                <button class="visualizar">Visualizar</button>
+            </div>
+            <div class="ararangua">
+                <img src="https://www.familysearch.org/pt/wiki/img_auth.php/thumb/f/f7/Ararangu%C3%A1_SC.jpg/650px-Ararangu%C3%A1_SC.jpg" width="300px">
+                <p class="nome-cidade">Araranguá</p>
+                <p>Passagens a partir de</p>
+                <p>BTC 0,145242</p>
+                <button class="visualizar">Visualizar</button>
+            </div>
+        </div>
+        <form>
+            <input placeholder="Informe a origem">
+            <input placeholder="Informe o destino">
+            <label for="ida">Ida:</label>
+            <input placeholder="mm/dd/yyyy">
+            <label for="volta">Volta:</label>
+            <input placeholder="mm/dd/yyyy">
+            <button class="procurar">Procurar</button>
+        </form>
+    </main>
+    <footer>
+        <h2>Bonvoyage</h2>
+        <p>(c) 2023 Agência de Turismo - Rua Joel Leon nº999, CEP 7777-777 Anor Londo/SC - CNPJ: 33.3333.33/0001-33
+    </footer>
+</body>
+</html>
